@@ -5,3 +5,10 @@ resource "azurerm_resource_group" "rg" {
   name     = each.value.name
   location = each.value.location
 }
+
+resource "azurerm_resource_group" "rg" {
+  for_each = var.rinkia_name
+
+  name     = each.value.name
+  location = each.value.location
+}
