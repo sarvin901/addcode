@@ -5,8 +5,9 @@ pool: Arvind_agent
 
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: TerraformInstaller@1
+  inputs:
+    terraformVersion: 'latest'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
