@@ -1,12 +1,15 @@
 
   terraform {
   backend "azurerm" {
-    resource_group_name  = "rgr123"
-    storage_account_name = "stgr123"
-    container_name       = "tfstate"
-    key                  = "sona.statefile"
+    resource_group_name  = "aks-rg"
+    storage_account_name = "arvindagent"
+    container_name       = "tfarvind"
+    key                  = "merisonababu.tfstate"
     subscription_id      = "45135143-764a-43bc-8ae1-5ac75b1ffe37"
   }
+
+
+  
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
