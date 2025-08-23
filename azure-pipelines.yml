@@ -1,8 +1,8 @@
 trigger:
 - main
 
-pool:
-  vmImage: Arvind_agent
+pool: Arvind_agent
+
 
 steps:
 - script: echo Hello, world!
